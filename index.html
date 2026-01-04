@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DraftSense - Precision Drafting for the Modern Cyclist</title>
+    <meta name="description"
+        content="DraftSense is a lightweight, bike-mounted distance sensor helping cyclists manage drafting distances and save energy.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">DraftSense</div>
+        <nav>
+            <ul>
+                <li><a href="#science">The Science</a></li>
+                <li><a href="#product">The Product</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </nav>
+        <a href="#preorder" class="btn btn-primary">Pre-order Now</a>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Precision Drafting for the <span class="highlight">Modern Cyclist</span></h1>
+            <p class="tagline">Master the Draft, Master the Race.</p>
+            <p class="hero-desc">Save up to 30% energy with real-time audio feedback. The ultimate tool for triathletes
+                and competitive cyclists.</p>
+            <div class="cta-group">
+                <a href="#preorder" class="btn btn-primary">Pre-order Now</a>
+                <a href="#science" class="btn btn-secondary">Learn the Science</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <!-- Ideally a generated image of a sleek device or cyclist -->
+            <div class="visual-placeholder">
+                <i class="fa-solid fa-bicycle"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="science" class="section science-section">
+        <div class="container">
+            <h2 class="section-title">The Science of Speed</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <i class="fa-solid fa-wind icon"></i>
+                    <h3>Aerodynamic Drag</h3>
+                    <p>Reduce drag by slipstreaming. Riding in the wake of another cyclist significantly lowers wind
+                        resistance.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-bolt icon"></i>
+                    <h3>30% Energy Savings</h3>
+                    <p>Studies show riding 150cm behind another rider can save up to 30% of your energy output at speed.
+                    </p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-users icon"></i>
+                    <h3>Echelon Formation</h3>
+                    <p>Optimize positioning in crosswinds. Even motor vehicle wakes can offer 15% reduction from 20m
+                        away.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="product" class="section product-section">
+        <div class="container">
+            <h2 class="section-title">Engineered for Performance</h2>
+            <div class="product-feature-grid">
+                <div class="feature-text">
+                    <h3>Hardware Specifications</h3>
+                    <ul class="specs-list">
+                        <li><i class="fa-solid fa-microchip"></i> <strong>Ultrasonic Sensor:</strong> Precision distance
+                            measurement.</li>
+                        <li><i class="fa-solid fa-droplet"></i> <strong>IP67 Waterproof:</strong> Aluminium enclosure
+                            built for all weather.</li>
+                        <li><i class="fa-solid fa-feather"></i> <strong>Lightweight:</strong> Unobtrusive aerodynamic
+                            design.</li>
+                        <li><i class="fa-solid fa-volume-high"></i> <strong>Audio Feedback:</strong> Real-time beeps for
+                            zone drafting.</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="device-mockup">
+                        <div class="sensor-eye"></div>
+                        <div class="led-indicator"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="video" class="section video-section">
+        <div class="container">
+            <h2 class="section-title">See It In Action</h2>
+            <div class="video-wrapper">
+                <div class="video-placeholder">
+                    <i class="fa-solid fa-play-circle play-icon"></i>
+                    <p>Watch the Innovation Video</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator" class="section calculator-section">
+        <div class="container">
+            <h2 class="section-title">Drafting Calculator</h2>
+            <p class="section-subtitle">Estimate your competitive advantage.</p>
+
+            <div class="calc-container">
+                <div class="input-group">
+                    <label for="distance">Drafting Distance (cm)</label>
+                    <input type="range" id="distance" name="distance" min="50" max="500" value="150">
+                    <div class="range-value"><span id="distance-val">150</span> cm</div>
+                </div>
+
+                <div class="results">
+                    <div class="result-item">
+                        <span class="label">Estimated Energy Savings</span>
+                        <span class="value highlight" id="energy-savings">30%</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">Watts Saved (@ 300W)</span>
+                        <span class="value" id="watts-saved">90W</span>
+                    </div>
+                </div>
+                <p class="disclaimer">*Estimates based on standard aerodynamic models at 40km/h.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="community" class="section community-section">
+        <div class="container">
+            <h2 class="section-title">Community & Research</h2>
+            <div class="grid-2">
+                <div class="community-card">
+                    <h3>Community Feedback</h3>
+                    <p>"Ideally, this changes how we train for non-drafting triathlons. No more guessing zones." -
+                        <em>Triathlon Forum User</em>
+                    </p>
+                </div>
+                <div class="community-card">
+                    <h3>The Competitive Edge</h3>
+                    <p>Unlike <strong>RaceRanger</strong>, DraftSense is designed for broader commercial availability
+                        with proprietary feedback algorithms that adapt to your ride.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="section team-section">
+        <div class="container">
+            <h2 class="section-title">Meet the Innovators</h2>
+            <p class="section-subtitle">The team driving the future of cycling technology.</p>
+            <div class="grid-2">
+                <div class="team-member">
+                    <div class="avatar">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Leo Sato</h3>
+                    <p class="role">Developer</p>
+                    <p class="bio">Lead developer focusing on precision drafting technology.</p>
+                </div>
+                <div class="team-member">
+                    <div class="avatar">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3>Leo Zheng</h3>
+                    <p class="role">Business Operator</p>
+                    <p class="bio">Driving business strategy and operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h4>DraftSense</h4>
+                <p>Master the Draft.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="#">Contact Support</a>
+                <a href="#">Investors</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DraftSense. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
